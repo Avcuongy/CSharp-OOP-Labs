@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\OOP C#\\Buoi2_OOP_Bai2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09B63EF1-F072-4C23-B522-6BC612FC3527}|Buoi2_OOP_Bai2.csproj|d:\\c#\\oop c#\\buoi2_oop_bai2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09B63EF1-F072-4C23-B522-6BC612FC3527}|Buoi2_OOP_Bai2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09B63EF1-F072-4C23-B522-6BC612FC3527}|Buoi2_OOP_Bai2.csproj|D:\\C#\\OOP C#\\Buoi2_OOP_Bai2\\vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09B63EF1-F072-4C23-B522-6BC612FC3527}|Buoi2_OOP_Bai2.csproj|solutionrelative:vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Vector.cs",
+              "DocumentMoniker": "D:\\C#\\OOP C#\\Buoi2_OOP_Bai2\\Vector.cs",
+              "RelativeDocumentMoniker": "Vector.cs",
+              "ToolTip": "D:\\C#\\OOP C#\\Buoi2_OOP_Bai2\\Vector.cs",
+              "RelativeToolTip": "Vector.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T15:25:07.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\OOP C#\\Buoi2_OOP_Bai2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\C#\\OOP C#\\Buoi2_OOP_Bai2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T15:24:31.394Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

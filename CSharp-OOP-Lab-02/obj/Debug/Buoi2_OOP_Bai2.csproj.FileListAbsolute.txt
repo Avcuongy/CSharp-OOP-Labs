@@ -1,0 +1,14 @@
+D:\C#\Buoi2_OOP_Bai2\bin\Debug\Buoi2_OOP_Bai2.exe.config
+D:\C#\Buoi2_OOP_Bai2\bin\Debug\Buoi2_OOP_Bai2.exe
+D:\C#\Buoi2_OOP_Bai2\bin\Debug\Buoi2_OOP_Bai2.pdb
+D:\C#\Buoi2_OOP_Bai2\obj\Debug\Buoi2_OOP_Bai2.csproj.AssemblyReference.cache
+D:\C#\Buoi2_OOP_Bai2\obj\Debug\Buoi2_OOP_Bai2.csproj.CoreCompileInputs.cache
+D:\C#\Buoi2_OOP_Bai2\obj\Debug\Buoi2_OOP_Bai2.exe
+D:\C#\Buoi2_OOP_Bai2\obj\Debug\Buoi2_OOP_Bai2.pdb
+D:\C#\OOP C#\Buoi2_OOP_Bai2\bin\Debug\Buoi2_OOP_Bai2.exe.config
+D:\C#\OOP C#\Buoi2_OOP_Bai2\bin\Debug\Buoi2_OOP_Bai2.exe
+D:\C#\OOP C#\Buoi2_OOP_Bai2\bin\Debug\Buoi2_OOP_Bai2.pdb
+D:\C#\OOP C#\Buoi2_OOP_Bai2\obj\Debug\Buoi2_OOP_Bai2.csproj.AssemblyReference.cache
+D:\C#\OOP C#\Buoi2_OOP_Bai2\obj\Debug\Buoi2_OOP_Bai2.csproj.CoreCompileInputs.cache
+D:\C#\OOP C#\Buoi2_OOP_Bai2\obj\Debug\Buoi2_OOP_Bai2.exe
+D:\C#\OOP C#\Buoi2_OOP_Bai2\obj\Debug\Buoi2_OOP_Bai2.pdb

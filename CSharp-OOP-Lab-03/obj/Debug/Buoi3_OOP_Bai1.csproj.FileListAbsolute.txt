@@ -1,0 +1,7 @@
+D:\C#\OOP C#\Buoi3_OOP_Bai1\bin\Debug\Buoi3_OOP_Bai1.exe.config
+D:\C#\OOP C#\Buoi3_OOP_Bai1\bin\Debug\Buoi3_OOP_Bai1.exe
+D:\C#\OOP C#\Buoi3_OOP_Bai1\bin\Debug\Buoi3_OOP_Bai1.pdb
+D:\C#\OOP C#\Buoi3_OOP_Bai1\obj\Debug\Buoi3_OOP_Bai1.csproj.AssemblyReference.cache
+D:\C#\OOP C#\Buoi3_OOP_Bai1\obj\Debug\Buoi3_OOP_Bai1.csproj.CoreCompileInputs.cache
+D:\C#\OOP C#\Buoi3_OOP_Bai1\obj\Debug\Buoi3_OOP_Bai1.exe
+D:\C#\OOP C#\Buoi3_OOP_Bai1\obj\Debug\Buoi3_OOP_Bai1.pdb
