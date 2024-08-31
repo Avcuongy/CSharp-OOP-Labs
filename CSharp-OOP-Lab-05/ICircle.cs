@@ -9,5 +9,6 @@ namespace CSharp_OOP_Lab_05
     internal interface ICircle
     {
         float cal_area();
+        string showinfo();
     }
 }

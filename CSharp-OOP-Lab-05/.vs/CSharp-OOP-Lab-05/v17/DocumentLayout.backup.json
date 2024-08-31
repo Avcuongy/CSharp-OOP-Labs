@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|d:\\c#\\oop c#\\csharp-oop-lab-05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|d:\\c#\\oop c#\\csharp-oop-lab-05\\ipoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|solutionrelative:ipoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|d:\\c#\\oop c#\\csharp-oop-lab-05\\point2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|solutionrelative:point2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|d:\\c#\\oop c#\\csharp-oop-lab-05\\point3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|solutionrelative:point3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,52 +26,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IPoint.cs",
-              "DocumentMoniker": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\IPoint.cs",
-              "RelativeDocumentMoniker": "IPoint.cs",
-              "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\IPoint.cs",
-              "RelativeToolTip": "IPoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T11:38:19.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Point3D.cs",
-              "DocumentMoniker": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\Point3D.cs",
-              "RelativeDocumentMoniker": "Point3D.cs",
-              "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\Point3D.cs",
-              "RelativeToolTip": "Point3D.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T11:06:36.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Point2D.cs",
-              "DocumentMoniker": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\Point2D.cs",
-              "RelativeDocumentMoniker": "Point2D.cs",
-              "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\Point2D.cs",
-              "RelativeToolTip": "Point2D.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T11:06:37.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAA9wD4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T08:42:04.415Z",
               "EditorCaption": ""

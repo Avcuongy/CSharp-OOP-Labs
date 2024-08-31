@@ -40,7 +40,15 @@ namespace CSharp_OOP_Lab_05
                 }
             }
 
+            // Thực thi
+            PrintCalArea(arrCircle);
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n---------------------------------------------------------\n");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
             PrintDistPoint(arrPoint);
+
             Console.ReadKey();           
         }
         // Method in Khoảng cách cửa từng cặp Point ra
@@ -58,18 +66,55 @@ namespace CSharp_OOP_Lab_05
                 {
                     point3D.Add((Point3D)point);
                 }
-
             }
-
             // Tính khoảng cách giữa các điểm 2D
-            for (int i = 0; i < point2D.Count - 1; i++)
+            for (int i = 0; i < point2D.Count-1; i++)
             {
-                for (int j = i+1; j < point2D.Count; j++)
+                for (int j = i + 1; j < point2D.Count; j++)
                 {
-                    
-                }    
+                    Console.WriteLine($"{point2D[i].showinfo()} và {point2D[j].showinfo()} dist = {point2D[i].cal_dist(point2D[j])}");
+                }
             }
-            Console.WriteLine("----------------------------------------------");
+
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n---------------------------------------------------------\n");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
+
+            // Tính khoảng cách giữa các điểm 3D
+            for (int i = 0; i < point3D.Count - 1; i++)
+            {
+                for (int j = i + 1; j < point3D.Count; j++)
+                {
+                    Console.WriteLine($"{point3D[i].showinfo()} và {point3D[j].showinfo()} dist = {point3D[i].cal_dist(point3D[j])}");
+                }
+            }
+        }
+        // Method in diện tích từng cặp ICircle
+        static void PrintCalArea(ICircle[] pc)
+        {
+            List<Circle2D> circle2D = new List<Circle2D>();
+            List<Circle3D> circle3D = new List<Circle3D>();
+            foreach (ICircle circle in pc)
+            {
+                if (circle is Circle2D)
+                {
+                    circle2D.Add((Circle2D)circle);
+                }
+                else
+                {
+                    circle3D.Add((Circle3D)circle);
+                }
+            }
+            foreach (Circle2D i in circle2D)
+            {
+                Console.WriteLine($"Circle2D {i.showinfo()} có diện tích = {i.cal_area()}");
+            }
+            foreach (Circle3D i in circle3D)
+            {
+                Console.WriteLine($"Circle3D {i.showinfo()} có diện tích = {i.cal_area()}");
+            }
         }
     }
 }

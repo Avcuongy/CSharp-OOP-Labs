@@ -21,5 +21,9 @@ namespace CSharp_OOP_Lab_05
         {
             return (float)Math.PI * R * R;
         }
+        public string showinfo()
+        {
+            return $"({center.X},{center.Y},{center.Z}) R = {R}";
+        }
     }
 }

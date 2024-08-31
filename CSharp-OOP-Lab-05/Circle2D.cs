@@ -16,12 +16,15 @@ namespace CSharp_OOP_Lab_05
             this.center = center;
         }
 
-        public float R { get => R; set => R = value; }
+        public float R { get => r; set => r = value; }
         internal Point2D Center { get => center; set => center = value; }
-        
         public float cal_area()
         {
             return (float)Math.PI * R * R;
+        }
+        public string showinfo()
+        {
+            return $"({center.X},{center.Y}) R = {R}";
         }
     }
 }

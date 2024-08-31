@@ -20,9 +20,18 @@ namespace CSharp_OOP_Lab_05
         public float Y { get => y; set => y = value; }
         public float Z { get => z; set => z = value; }
 
-        public float cal_dist()
+        public float cal_dist(IPoint other)
         {
-            return (float)Math.Sqrt(X * X + Y * Y + Z * Z);
+            float result = 0;
+            if (other is Point3D ot)
+            {
+                result = (float)Math.Sqrt(Math.Pow(ot.X - X, 2) + Math.Pow(ot.Y - Y, 2) + Math.Pow(ot.Z - Z, 2));
+            }
+            return result;
+        }
+        public string showinfo()
+        {
+            return $"({X},{Y},{Z})";
         }
     }
 }
