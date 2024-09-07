@@ -19,7 +19,7 @@ namespace CSharp_OOP_Lab_05
         internal Point3D Center { get => center; set => center = value; }
         public float cal_area()
         {
-            return (float)Math.PI * R * R;
+            return (float)Math.PI * R * R*4;
         }
         public string showinfo()
         {

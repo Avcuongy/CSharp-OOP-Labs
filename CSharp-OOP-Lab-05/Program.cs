@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -49,6 +48,10 @@ namespace CSharp_OOP_Lab_05
         // Method khoảng cách cửa từng cặp Point ra
         static void PrintDistPoint(IPoint[] arrPoint)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Khoảng cách Point:\n");
+            Console.ForegroundColor = ConsoleColor.White;
+
             List<Point2D> point2D = new List<Point2D>();
             List<Point3D> point3D = new List<Point3D>();
             foreach (IPoint point in arrPoint)
@@ -62,31 +65,39 @@ namespace CSharp_OOP_Lab_05
                     point3D.Add((Point3D)point);
                 }
             }
+
             // Tính khoảng cách giữa các điểm 2D
+            Console.WriteLine("+------------+------------+------------+");
+            Console.WriteLine($"|{"Point2D",-12}|{"Point2D",-12}|{"Distance",-12}|");
+            Console.WriteLine("+------------+------------+------------+");
             for (int i = 0; i < point2D.Count - 1; i++)
             {
                 for (int j = i + 1; j < point2D.Count; j++)
                 {
-                    Console.WriteLine($"{point2D[i].showinfo()} và {point2D[j].showinfo()} => dist = {point2D[i].cal_dist(point2D[j])}");
+                    Console.WriteLine($"|{point2D[i].showinfo(),-12}|{point2D[j].showinfo(),-12}|{point2D[i].cal_dist(point2D[j]),-12}|");
                 }
             }
-
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\n---------------------------------------------------------\n");
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("+------------+------------+------------+\n");
 
             // Tính khoảng cách giữa các điểm 3D
+            Console.WriteLine("+------------+------------+------------+");
+            Console.WriteLine($"|{"Point3D",-12}|{"Point3D",-12}|{"Distance",-12}|");
+            Console.WriteLine("+------------+------------+------------+");
             for (int i = 0; i < point3D.Count - 1; i++)
             {
                 for (int j = i + 1; j < point3D.Count; j++)
                 {
-                    Console.WriteLine($"{point3D[i].showinfo()} và {point3D[j].showinfo()} => dist = {point3D[i].cal_dist(point3D[j])}");
+                    Console.WriteLine($"|{point3D[i].showinfo(),-12}|{point3D[j].showinfo(),-12}|{point3D[i].cal_dist(point3D[j]),-12}|");
                 }
             }
+            Console.WriteLine("+------------+------------+------------+");
         }
         // Method diện tích từng cặp ICircle
         static void PrintCalArea(ICircle[] arrCircle)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Diện tích:\n");
+            Console.ForegroundColor = ConsoleColor.White;
             List<Circle2D> circle2D = new List<Circle2D>();
             List<Circle3D> circle3D = new List<Circle3D>();
             foreach (ICircle circle in arrCircle)
@@ -100,18 +111,31 @@ namespace CSharp_OOP_Lab_05
                     circle3D.Add((Circle3D)circle);
                 }
             }
+
+            Console.WriteLine("+--------------------+------------+");
+            Console.WriteLine($"|{"Circle2D",-20}|{"Diện tích",-12}|");
+            Console.WriteLine("+--------------------+------------+");
             foreach (Circle2D i in circle2D)
             {
-                Console.WriteLine($"Circle2D {i.showinfo()} có diện tích = {i.cal_area()}");
+                Console.WriteLine($"|{i.showinfo(),-20}|{i.cal_area(),-12}|");
             }
+            Console.WriteLine("+--------------------+------------+\n");
+
+            Console.WriteLine("+--------------------+------------+");
+            Console.WriteLine($"|{"Circle3D",-20}|{"Diện tích",-12}|");
+            Console.WriteLine("+--------------------+------------+");
             foreach (Circle3D i in circle3D)
             {
-                Console.WriteLine($"Circle3D {i.showinfo()} có diện tích = {i.cal_area()}");
+                Console.WriteLine($"|{i.showinfo(),-20}|{i.cal_area(),-12}|");
             }
+            Console.WriteLine("+--------------------+------------+");
         }
         // Method vị trí tương đối
         static void PrintPositionPoint()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Vị trí tương đối:\n");
+            Console.ForegroundColor = ConsoleColor.White;
             // Tách thành các kiểu riêng biệt
             List<Circle2D> circle2D = new List<Circle2D>();
             List<Circle3D> circle3D = new List<Circle3D>();
@@ -140,60 +164,62 @@ namespace CSharp_OOP_Lab_05
                 }
             }
 
-            // Point2D và Circle2D
+            //20-12-12
+            Console.WriteLine("+--------------------+------------+------------+");
+            Console.WriteLine($"|{"Circle2D",-20}|{"Point2D",-12}|{"VTTT",-12}|");
+            Console.WriteLine("+--------------------+------------+------------+");
             foreach (Circle2D circle in circle2D)
             {
                 foreach (Point2D point in point2D)
                 {
                     if (circle.Center.cal_dist(point) > circle.R)
                     {
-                        Console.WriteLine($"Point {point.showinfo()} nằm ngoài Circle {circle.showinfo()}");
+                        Console.WriteLine($"|{circle.showinfo(),-20}|{point.showinfo(),-12}|{"Nằm ngoài",-12}|");
                     }
                     else if (circle.Center.cal_dist(point) < circle.R)
                     {
-                        Console.WriteLine($"Point {point.showinfo()} nằm trong Circle {circle.showinfo()}");
+                        Console.WriteLine($"|{circle.showinfo(),-20}|{point.showinfo(),-12}|{"Nằm trong",-12}|");
                     }
                     else
                     {
-                        Console.WriteLine($"Point {point.showinfo()} nằm trên Circle {circle.showinfo()}");
+                        Console.WriteLine($"|{circle.showinfo(),-20}|{point.showinfo(),-12}|{"Nằm trên",-12}|");
                     }
                 }
             }
+            Console.WriteLine("+--------------------+------------+------------+\n");
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\n---------------------------------------------------------\n");
-            Console.ForegroundColor = ConsoleColor.White;
-
-            // Point3D và Circle3D
+            Console.WriteLine("+--------------------+------------+------------+");
+            Console.WriteLine($"|{"Circle3D",-20}|{"Point3D",-12}|{"VTTT",-12}|");
+            Console.WriteLine("+--------------------+------------+------------+");
             foreach (Circle3D circle in circle3D)
             {
                 foreach (Point3D point in point3D)
                 {
                     if (circle.Center.cal_dist(point) > circle.R)
                     {
-                        Console.WriteLine($"Point {point.showinfo()} nằm ngoài Circle {circle.showinfo()}");
+                        Console.WriteLine($"|{circle.showinfo(),-20}|{point.showinfo(),-12}|{"Nằm ngoài",-12}|");
                     }
                     else if (circle.Center.cal_dist(point) < circle.R)
                     {
-                        Console.WriteLine($"Point {point.showinfo()} nằm trong Circle {circle.showinfo()}");
+                        Console.WriteLine($"|{circle.showinfo(),-20}|{point.showinfo(),-12}|{"Nằm trong",-12}|");
                     }
                     else
                     {
-                        Console.WriteLine($"Point {point.showinfo()} nằm trên Circle {circle.showinfo()}");
+                        Console.WriteLine($"|{circle.showinfo(),-20}|{point.showinfo(),-12}|{"Nằm trên",-12}|");
                     }
                 }
             }
-
+            Console.WriteLine("+--------------------+------------+------------+");
         }
         // Method in ra toàn bộ kết quả
         static void PrintAllResults()
         {
             PrintCalArea(arrCircle);
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine("\n---------------------------------------------------------\n");
             Console.ForegroundColor = ConsoleColor.White;
             PrintDistPoint(arrPoint);
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine("\n---------------------------------------------------------\n");
             Console.ForegroundColor = ConsoleColor.White;
             PrintPositionPoint();
