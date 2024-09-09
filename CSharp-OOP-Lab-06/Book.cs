@@ -12,9 +12,7 @@ public class Book : ICloneable
     private int numofpages;
     private uint price;
     private byte quantity;
-    public Book(string id, string title, string authorname,
-        DateTime publisheddate, string publisher,
-        int numofpages, uint price, byte quantity)
+    public Book(string id, string title, string authorname, DateTime publisheddate, string publisher, int numofpages, uint price, byte quantity)
     {
         this.id = id;
         this.title = title;
@@ -30,12 +28,11 @@ public class Book : ICloneable
         return new Book(id, title, authorname, publisheddate,
             publisher, numofpages, price, quantity);
     }
-
     public bool find(string keyword)
     {
-        return title.IndexOf(keyword) >= 0 || authorname.IndexOf(keyword) >= 0;
+        return title.IndexOf(keyword) >= 0 || authorname.IndexOf(keyword) >= 0 || id.IndexOf(keyword) >= 0;
     }
-    public void update(string title, string authorname,DateTime publisheddate, string publisher, int numofpages, uint price, byte quantity)
+    public void update(string title, string authorname, DateTime publisheddate, string publisher, int numofpages, uint price, byte quantity)
     {
         this.title = title;
         this.authorname = authorname;
@@ -47,7 +44,7 @@ public class Book : ICloneable
     }
     public override string ToString()
     {
-        return "Book(" + id + "," + title + "," + authorname + "," +publisheddate + "," + publisher + "," + numofpages + "," + price + "," + quantity + ")";
+        return "Book(" + id + "," + title + "," + authorname + "," + publisheddate + "," + publisher + "," + numofpages + "," + price + "," + quantity + ")";
     }
     public void BorrowBook(byte amount)
     {

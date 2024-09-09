@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 
 namespace CSharp_OOP_Lab_06
 {
-    public class User
+    public class User : ICloneable
     {
         private string name;
-        private byte idUser;
-
-        public User(string name, byte idUser)
+        private string idUser;
+        public User(string name, string idUser)
         {
             this.name = name;
-            this.idUser = idUser;
+            this.IdUser = idUser;
+        }
+        public object Clone()
+        {
+            return new User(name, idUser);
         }
         public string Name { get => name; set => name = value; }
-        public byte IdUser { get => idUser; set => idUser = value; }
+        public string IdUser { get => idUser; set => idUser = value; }
         public override string ToString()
         {
-            return $"User(ID: {idUser}, Name: {name})";
+            return $"User(Name: {name}, ID: {IdUser})";
         }
     }
 }
