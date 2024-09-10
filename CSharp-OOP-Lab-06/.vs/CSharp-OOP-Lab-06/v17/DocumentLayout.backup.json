@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Book.cs",
               "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-06\\Book.cs",
               "RelativeToolTip": "Book.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T13:59:41.052Z",
               "IsPinned": true,
@@ -50,7 +50,7 @@
               "RelativeDocumentMoniker": "User.cs",
               "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-06\\User.cs",
               "RelativeToolTip": "User.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T13:59:45.465Z",
               "IsPinned": true,
@@ -64,19 +64,11 @@
               "RelativeDocumentMoniker": "Library.cs",
               "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-06\\Library.cs",
               "RelativeToolTip": "Library.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAswFoAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T13:59:36.297Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
@@ -86,7 +78,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-06\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAowBsAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAwFMAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T13:59:19.457Z",
               "EditorCaption": ""

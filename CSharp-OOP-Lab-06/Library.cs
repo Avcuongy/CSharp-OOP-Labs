@@ -42,22 +42,6 @@ public class Library
             }
         }
     }
-    public void BorrowBookByTitle(string idUser, string title, byte amount)
-    {
-        Book book = books.Find(b => b.ToString().Contains(title));
-        if (book != null)
-        {
-            if (book.IsAvailable(amount))
-            {
-                book.BorrowBook(amount);
-                Console.WriteLine($"{idUser} đã mượn thành công {amount} sách của tựa \"{title}\"");
-            }
-            else
-            {
-                Console.WriteLine("Out Of Limit số sách có thể mượn");
-            }
-        }
-    }
     public void ReturnBookById(string idUser, string id, byte amount)
     {
         Book book = books.Find(b => b.ToString().Contains(id));
@@ -65,19 +49,6 @@ public class Library
         {
             book.ReturnBook(amount);
             Console.WriteLine($"{idUser} trả thành công {amount} sách của mã sách \"{id}\"");
-        }
-        else
-        {
-            Console.WriteLine($"{idUser} không mượn bất kì sách nào");
-        }
-    }
-    public void ReturnBookByTitle(string idUser, string title, byte amount)
-    {
-        Book book = books.Find(b => b.ToString().Contains(title));
-        if (book != null)
-        {
-            book.ReturnBook(amount);
-            Console.WriteLine($"{idUser} trả thành công {amount} sách của tựa \"{title}\"");
         }
         else
         {

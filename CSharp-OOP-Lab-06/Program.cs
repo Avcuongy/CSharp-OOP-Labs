@@ -24,20 +24,28 @@ namespace CSharp_OOP_Lab_06
             lib.addUser(new User("Ronaldo", "M2"));
             lib.addUser(new User("Neymar", "M3"));
 
+            // Danh sách sách
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Danh sách sách:");
+            Console.ForegroundColor = ConsoleColor.White;
+            PrintBooks(lib.Books);
+            Console.WriteLine();
+
+            //Danh sách user trong thư viện
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Danh sách Users:");
+            Console.ForegroundColor = ConsoleColor.White;
+            PrintUsers(lib.Users);
+            Console.WriteLine();
+
             // Chọn thẻ user của bạn
-            Console.Write("Nhập ID User: ");
+            Console.Write("Nhập ID User của bạn: ");
             string idUser = Console.ReadLine();
             Console.WriteLine(lib.ChooseUser(idUser));
             Console.WriteLine();
 
             if (lib.CheckIdUser(idUser))
             {
-                // Danh sách sách
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Danh sách sách:");
-                Console.ForegroundColor = ConsoleColor.White;
-                PrintBooks(lib.Books);
-
                 // Tìm kiếm theo tên sách hoặc tác giả
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\nKết quả tìm kiếm:");
@@ -50,7 +58,7 @@ namespace CSharp_OOP_Lab_06
                 Console.WriteLine("\nMượn sách:");
                 Console.ForegroundColor = ConsoleColor.White;
                 lib.BorrowBookById(idUser, "B01", 3);
-                lib.BorrowBookByTitle(idUser, "Machine Learning", 6);
+                lib.BorrowBookById(idUser, "B03", 3);
 
                 // In sách sau khi mượn
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -63,7 +71,7 @@ namespace CSharp_OOP_Lab_06
                 Console.WriteLine("\nTrả sách:");
                 Console.ForegroundColor = ConsoleColor.White;
                 lib.ReturnBookById(idUser, "B01", 1);
-                lib.ReturnBookByTitle(idUser, "Machine Learning", 3);
+                lib.ReturnBookById(idUser, "B03", 3);
 
                 // In sách sau khi trả
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -81,6 +89,13 @@ namespace CSharp_OOP_Lab_06
         {
             foreach (Book book in bks)
                 Console.WriteLine(book);
+        }
+        static void PrintUsers(List<User> us)
+        {
+            foreach(User user in us)
+            {
+                Console.WriteLine(user);
+            }    
         }
     }
 }
