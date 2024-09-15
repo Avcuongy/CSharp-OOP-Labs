@@ -38,51 +38,54 @@ namespace CSharp_OOP_Lab_06
             PrintUsers(lib.Users);
             Console.WriteLine();
 
-            // Chọn thẻ user của bạn
-            Console.Write("Nhập ID User của bạn: ");
-            string idUser = Console.ReadLine();
-            Console.WriteLine(lib.ChooseUser(idUser));
+            Console.Write("Nhập ID User: ");
+            string id = Console.ReadLine();
             Console.WriteLine();
 
-            if (lib.CheckIdUser(idUser))
+            if (lib.CheckIdUser(id))
             {
-                // Tìm kiếm theo tên sách hoặc tác giả
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\nKết quả tìm kiếm:");
-                Console.ForegroundColor = ConsoleColor.White;
-                PrintBooks(lib.find("Lap trinh HDT"));
-                PrintBooks(lib.find("Bukov"));
-
-                // Mượn sách
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\nMượn sách:");
-                Console.ForegroundColor = ConsoleColor.White;
-                lib.BorrowBookById(idUser, "B01", 3);
-                lib.BorrowBookById(idUser, "B03", 3);
-
-                // In sách sau khi mượn
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\nDanh sách sách sau khi mượn:");
-                Console.ForegroundColor = ConsoleColor.White;
-                PrintBooks(lib.Books);
-
-                // Trả sách
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\nTrả sách:");
-                Console.ForegroundColor = ConsoleColor.White;
-                lib.ReturnBookById(idUser, "B01", 1);
-                lib.ReturnBookById(idUser, "B03", 3);
-
-                // In sách sau khi trả
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\nDanh sách sách sau khi trả:");
-                Console.ForegroundColor = ConsoleColor.White;
-                PrintBooks(lib.Books);
+                Console.WriteLine("1. Mượn sách");
+                Console.WriteLine("2. Trả sách");
+                Console.WriteLine("3. In danh sách");
+                string choose = "";
+                do
+                {
+                    Console.WriteLine();
+                    Console.Write("Phương thức bạn chọn: ");
+                    choose = Console.ReadLine();
+                    if (choose == "1")
+                    {
+                        Console.WriteLine();
+                        Console.Write("Mã sách mượn: ");
+                        string idBook = Console.ReadLine();
+                        Console.Write("Số lượng mượn :");
+                        int quantity = int.Parse(Console.ReadLine());
+                        lib.BorrowBookById(id, idBook, (byte)quantity);
+                        Console.WriteLine();
+                    }
+                    else if (choose == "2")
+                    {
+                        Console.WriteLine();
+                        Console.Write("Mã sách trả: ");
+                        string idBook = Console.ReadLine();
+                        Console.Write("Số lượng trả :");
+                        int quantity = int.Parse(Console.ReadLine());
+                        lib.ReturnBookById(id, idBook, (byte)quantity);
+                        Console.WriteLine();
+                    }
+                    else if (choose == "3")
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine("Danh sách hiện tại: ");
+                        PrintBooks(lib.Books);
+                        Console.WriteLine();
+                    }
+                }
+                while (choose != "1" || choose != "2");
             }
             else
-            {
-                Console.WriteLine("Bạn cần đăng kí thẻ thư viện");
-            }
+                Console.WriteLine("Sai ID User. Try Again ");
+
             Console.ReadKey();
         }
         static void PrintBooks(List<Book> bks)
@@ -92,10 +95,10 @@ namespace CSharp_OOP_Lab_06
         }
         static void PrintUsers(List<User> us)
         {
-            foreach(User user in us)
+            foreach (User user in us)
             {
                 Console.WriteLine(user);
-            }    
+            }
         }
     }
 }

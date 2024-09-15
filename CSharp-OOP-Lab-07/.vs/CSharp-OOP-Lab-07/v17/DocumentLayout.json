@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-07\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF98882-8112-469F-A489-3702CEE250E3}|CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07.csproj|D:\\C#\\OOP C#\\CSharp-OOP-Lab-07\\csharp-oop-lab-07\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF98882-8112-469F-A489-3702CEE250E3}|CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07.csproj|solutionrelative:csharp-oop-lab-07\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF98882-8112-469F-A489-3702CEE250E3}|CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07.csproj|D:\\C#\\OOP C#\\CSharp-OOP-Lab-07\\csharp-oop-lab-07\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF98882-8112-469F-A489-3702CEE250E3}|CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07.csproj|solutionrelative:csharp-oop-lab-07\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF98882-8112-469F-A489-3702CEE250E3}|CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07.csproj|d:\\c#\\oop c#\\csharp-oop-lab-07\\csharp-oop-lab-07\\atm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF98882-8112-469F-A489-3702CEE250E3}|CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07.csproj|solutionrelative:csharp-oop-lab-07\\atm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07\\Account.cs",
+              "RelativeDocumentMoniker": "CSharp-OOP-Lab-07\\Account.cs",
+              "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07\\Account.cs",
+              "RelativeToolTip": "CSharp-OOP-Lab-07\\Account.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T15:06:38.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ATM.cs",
+              "DocumentMoniker": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07\\ATM.cs",
+              "RelativeDocumentMoniker": "CSharp-OOP-Lab-07\\ATM.cs",
+              "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07\\ATM.cs",
+              "RelativeToolTip": "CSharp-OOP-Lab-07\\ATM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T15:07:04.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07\\Program.cs",
+              "RelativeDocumentMoniker": "CSharp-OOP-Lab-07\\Program.cs",
+              "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-07\\CSharp-OOP-Lab-07\\Program.cs",
+              "RelativeToolTip": "CSharp-OOP-Lab-07\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T15:00:09.534Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
