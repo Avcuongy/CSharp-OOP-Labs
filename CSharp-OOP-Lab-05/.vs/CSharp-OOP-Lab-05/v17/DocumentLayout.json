@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|d:\\c#\\oop c#\\csharp-oop-lab-05\\point2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\point2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|solutionrelative:point2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|d:\\c#\\oop c#\\csharp-oop-lab-05\\ipoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\ipoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|solutionrelative:ipoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|d:\\c#\\oop c#\\csharp-oop-lab-05\\icircle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|D:\\C#\\OOP C#\\CSharp-OOP-Lab-05\\icircle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40282A62-F60D-4FBD-AB81-8D754E2496B5}|CSharp-OOP-Lab-05.csproj|solutionrelative:icircle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,8 +46,7 @@
               "RelativeToolTip": "Point2D.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T03:08:14.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T03:08:14.579Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "IPoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T03:08:01.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T03:08:01.944Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "ICircle.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T03:07:59.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T03:07:59.572Z"
             },
             {
               "$type": "Document",
