@@ -1,0 +1,7 @@
+D:\C#\OOP C#\CSharp-OOP-Lab-08\CSharp-OOP-Lab-08\bin\Debug\CSharp-OOP-Lab-08.exe.config
+D:\C#\OOP C#\CSharp-OOP-Lab-08\CSharp-OOP-Lab-08\bin\Debug\CSharp-OOP-Lab-08.exe
+D:\C#\OOP C#\CSharp-OOP-Lab-08\CSharp-OOP-Lab-08\bin\Debug\CSharp-OOP-Lab-08.pdb
+D:\C#\OOP C#\CSharp-OOP-Lab-08\CSharp-OOP-Lab-08\obj\Debug\CSharp-OOP-Lab-08.csproj.AssemblyReference.cache
+D:\C#\OOP C#\CSharp-OOP-Lab-08\CSharp-OOP-Lab-08\obj\Debug\CSharp-OOP-Lab-08.csproj.CoreCompileInputs.cache
+D:\C#\OOP C#\CSharp-OOP-Lab-08\CSharp-OOP-Lab-08\obj\Debug\CSharp-OOP-Lab-08.exe
+D:\C#\OOP C#\CSharp-OOP-Lab-08\CSharp-OOP-Lab-08\obj\Debug\CSharp-OOP-Lab-08.pdb

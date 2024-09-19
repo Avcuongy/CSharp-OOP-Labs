@@ -31,7 +31,6 @@ namespace CSharp_OOP_Lab_07
         {
             Accounts.Add(account);
         }
-
         public bool CheckAccount(string name)
         {
             foreach (Account account in Accounts)
@@ -43,7 +42,6 @@ namespace CSharp_OOP_Lab_07
             }
             return false;
         }
-
         public Account TransformToAccount(string user_name)
         {
             foreach (Account account in Accounts)
@@ -53,13 +51,10 @@ namespace CSharp_OOP_Lab_07
             }
             return null;
         }
-
         // Delegate để xử lí sự kiện
         public delegate void Transaction(string message);
-
         // Sự kiện kích hoạt khi có giao dịch
         public event Transaction HaveTransaction;
-
         public void Draw(string username, decimal amount)
         {
             Account acc = TransformToAccount(username);
