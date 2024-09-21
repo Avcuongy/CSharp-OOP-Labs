@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.Eventing.Reader;
@@ -35,29 +36,32 @@ namespace CSharp_OOP_Lab_08
 
             bool checkUser = false;
             Player player = null;
-            foreach (Player p in Users)
+
+            try
             {
-                if (p.CheckUser(username))
+                foreach (Player p in Users)
                 {
-                    checkUser = true;
-                    player = p;
+                    if (p.CheckUser(username))
+                    {
+                        checkUser = true;
+                        player = p;
+                    }
                 }
-            }
 
-            if (!checkUser)
-            {
-                Console.Clear();
-                Console.WriteLine("Username wrong! Enter Your Username Again !");
-                Thread.Sleep(800);
-                goto Login;
-            }
-            else
-            {
-                Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"Welcome {username} Back To Your Farm !");
-                Thread.Sleep(800);
-
+                if (!checkUser)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Username wrong! Enter Your Username Again !");
+                    Thread.Sleep(800);
+                    goto Login;
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"Welcome {username} Back To Your Farm !");
+                    Thread.Sleep(500);
+                }
 
             MainMenu:
 
@@ -95,21 +99,17 @@ namespace CSharp_OOP_Lab_08
 
                             if (selectedProduct != null)
                             {
+                                Products.Add(selectedProduct);
+
+                            Back:
 
                                 Console.Clear();
 
                                 selectedProduct.Seed();
 
                                 Console.WriteLine();
-
-                                Products.Add(selectedProduct);
-
-                            Back:
-
                                 Console.WriteLine("Choose method:\n");
-
                                 Console.ForegroundColor = ConsoleColor.White;
-
                                 Console.WriteLine("1. Feed\n2. ProvWater\n3. Harvest:\n");
                                 Console.Write("Enter your choose: ");
                                 string pick = Console.ReadLine();
@@ -122,17 +122,24 @@ namespace CSharp_OOP_Lab_08
                                         {
                                             foreach (Product product in Products)
                                             {
-                                                if (product is Wheat wheat)
+                                                try
                                                 {
-                                                    wheat.Feed();
+                                                    if (product is Wheat wheat)
+                                                    {
+                                                        wheat.Feed();
+                                                    }
+                                                    else if (product is Tomato tomato)
+                                                    {
+                                                        tomato.Feed();
+                                                    }
+                                                    else if (product is Sunflower sunflower)
+                                                    {
+                                                        sunflower.Feed();
+                                                    }
                                                 }
-                                                else if (product is Tomato tomato)
+                                                catch (InvalidCastException ex)
                                                 {
-                                                    tomato.Feed();
-                                                }
-                                                else if (product is Sunflower sunflower)
-                                                {
-                                                    sunflower.Feed();
+                                                    Console.WriteLine($"Error: {ex.Message}");
                                                 }
                                             }
                                             Console.WriteLine("\nPress Enter To Back");
@@ -144,17 +151,24 @@ namespace CSharp_OOP_Lab_08
                                         {
                                             foreach (Product product in Products)
                                             {
-                                                if (product is Wheat wheat)
+                                                try
                                                 {
-                                                    wheat.ProvWater();
+                                                    if (product is Wheat wheat)
+                                                    {
+                                                        wheat.ProvWater();
+                                                    }
+                                                    else if (product is Tomato tomato)
+                                                    {
+                                                        tomato.ProvWater();
+                                                    }
+                                                    else if (product is Sunflower sunflower)
+                                                    {
+                                                        sunflower.ProvWater();
+                                                    }
                                                 }
-                                                else if (product is Tomato tomato)
+                                                catch (InvalidCastException ex)
                                                 {
-                                                    tomato.ProvWater();
-                                                }
-                                                else if (product is Sunflower sunflower)
-                                                {
-                                                    sunflower.ProvWater();
+                                                    Console.WriteLine($"Error: {ex.Message}");
                                                 }
                                             }
                                             Console.WriteLine("\nPress Enter To Back");
@@ -166,17 +180,24 @@ namespace CSharp_OOP_Lab_08
                                         {
                                             foreach (Product product in Products)
                                             {
-                                                if (product is Wheat wheat)
+                                                try
                                                 {
-                                                    player.AddReward(wheat.Harvest());
+                                                    if (product is Wheat wheat)
+                                                    {
+                                                        player.AddReward(wheat.Harvest());
+                                                    }
+                                                    else if (product is Tomato tomato)
+                                                    {
+                                                        player.AddReward(tomato.Harvest());
+                                                    }
+                                                    else if (product is Sunflower sunflower)
+                                                    {
+                                                        player.AddReward(sunflower.Harvest());
+                                                    }
                                                 }
-                                                else if (product is Tomato tomato)
+                                                catch (InvalidCastException ex)
                                                 {
-                                                    player.AddReward(tomato.Harvest());
-                                                }
-                                                else if (product is Sunflower sunflower)
-                                                {
-                                                    player.AddReward(sunflower.Harvest());
+                                                    Console.WriteLine($"Error: {ex.Message}");
                                                 }
                                             }
                                             Products.RemoveAt(0);
@@ -195,6 +216,20 @@ namespace CSharp_OOP_Lab_08
                             break;
                         }
                 }
+            }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                // Xử lý trường hợp không tìm thấy người dùng hoặc sản phẩm.
+                Thread.Sleep(500);
+                goto Login;
+            }
+            catch (ArgumentNullException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                // Xử lý trường hợp nhập vào là null.
+                Thread.Sleep(500);
+                goto Login;
             }
         }
     }

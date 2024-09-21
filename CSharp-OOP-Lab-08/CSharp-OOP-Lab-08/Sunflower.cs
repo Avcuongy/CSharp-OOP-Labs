@@ -22,7 +22,8 @@ namespace CSharp_OOP_Lab_08
         }
         public override void Seed()
         {
-            Console.WriteLine("Sunflower has peen planted");
+            Start = DateTime.Now;
+            Console.WriteLine($"Sunflower has peen planted at {Start.ToShortTimeString()}");
         }
         public override int Harvest()
         {
