@@ -14,9 +14,9 @@ namespace CSharp_OOP_Lab_08
             Console.OutputEncoding = Encoding.UTF8;
 
             List<Product> products = new List<Product>();
-            products.Add(new Wheat { Cost = 20, Value = 200, Fertilizer = 10, Water = 10 });
-            products.Add(new Tomato { Cost = 30, Value = 300, Fertilizer = 30, Water = 30 });
-            products.Add(new Sunflower { Cost = 50, Value = 500, Fertilizer = 50, Water = 50 });
+            products.Add(new Wheat());
+            products.Add(new Tomato());
+            products.Add(new Sunflower());
 
             List<Player> Users = new List<Player>()
             {
@@ -70,6 +70,22 @@ namespace CSharp_OOP_Lab_08
                     string seed = Console.ReadLine();
                     Console.WriteLine("Seed Successful");
                     Console.ForegroundColor= ConsoleColor.Red;
+
+                    Product selectedProduct = null;
+                    switch (seed)
+                    {
+                        case "1": selectedProduct = new Wheat(); break;
+                        case "2": selectedProduct = new Tomato(); break;
+                        case "3": selectedProduct = new Sunflower(); break;
+                        default:
+                            Console.WriteLine("Invalid seed selection.");
+                            break;
+                    }
+
+
+
+
+
                     Console.WriteLine("Press Enter To Menu");
                     Console.ReadLine();
                     goto Login;

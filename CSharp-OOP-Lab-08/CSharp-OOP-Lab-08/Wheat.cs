@@ -12,6 +12,13 @@ namespace CSharp_OOP_Lab_08
         private int numWater;
         public int NumFetilizer { get => numFetilizer; set => numFetilizer = value; }
         public int NumWater { get => numWater; set => numWater = value; }
+        public Wheat()
+        {
+            Cost = 20;
+            Value = 200;
+            Fertilizer = 20;
+            Water = 20;
+        }
         public override void Seed()
         {
             Start = DateTime.Now;

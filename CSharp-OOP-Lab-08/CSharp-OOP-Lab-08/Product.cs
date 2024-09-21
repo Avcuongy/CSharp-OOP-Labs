@@ -14,12 +14,13 @@ namespace CSharp_OOP_Lab_08
         private TimeSpan duration;
         private int fertilizer;
         private int water;
-        public int Cost { get => Cost; set => Cost = value; }
-        public int Value { get => Value; set => Value = value; }
-        public DateTime Start { get => Start; set => Start = value; }
-        public TimeSpan Duration { get => Duration; set => Duration = value; }
-        public int Fertilizer { get => Fertilizer; set => Fertilizer = value; }
-        public int Water { get => Water; set => Water = value; }
+        public int Cost { get => cost; set => cost = value; }
+        public int Value { get => value; set => this.value = value; }
+        public DateTime Start { get => start; set => start = value; }
+        public TimeSpan Duration { get => duration; set => duration = value; }
+        public int Fertilizer { get => fertilizer; set => fertilizer = value; }
+        public int Water { get => water; set => water = value; }
+
         abstract public void Seed();
         abstract public void Harvest();
     }
