@@ -18,17 +18,18 @@ namespace CSharp_OOP_Lab_08
             Value = 200;
             Fertilizer = 20;
             Water = 20;
+            Duration = TimeSpan.FromSeconds(10);
         }
         public override void Seed()
         {
-            Start = DateTime.Now;
-            Console.WriteLine("Wheat has peen planted");
+            Console.WriteLine($"Wheat has peen planted");
         }
-        public override void Harvest()
+        public override int Harvest()
         {
-            int totalCost = Cost + (numFetilizer*Fertilizer)+ (numWater*Water);
+            int totalCost = Cost + (numFetilizer*Fertilizer) + (numWater*Water);
             int profit = Value - totalCost;
             Console.WriteLine($"Wheat harvest => profit = {profit}");
+            return profit;
         }
         public void Feed()
         {

@@ -18,17 +18,18 @@ namespace CSharp_OOP_Lab_08
             Value = 300;
             Fertilizer = 30;
             Water = 30;
+            Duration = TimeSpan.FromSeconds(20);
         }
         public override void Seed()
         {
-            Start = DateTime.Now;
             Console.WriteLine("Tomato has peen planted");
         }
-        public override void Harvest()
+        public override int Harvest()
         {
             int totalCost = Cost + (numFetilizer * Fertilizer) + (numWater * Water);
             int profit = Value - totalCost;
             Console.WriteLine($"Tomato harvest => profit = {profit}");
+            return profit;
         }
         public void Feed()
         {

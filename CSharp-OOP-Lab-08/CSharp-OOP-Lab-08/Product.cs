@@ -20,8 +20,7 @@ namespace CSharp_OOP_Lab_08
         public TimeSpan Duration { get => duration; set => duration = value; }
         public int Fertilizer { get => fertilizer; set => fertilizer = value; }
         public int Water { get => water; set => water = value; }
-
         abstract public void Seed();
-        abstract public void Harvest();
+        abstract public int Harvest();
     }
 }

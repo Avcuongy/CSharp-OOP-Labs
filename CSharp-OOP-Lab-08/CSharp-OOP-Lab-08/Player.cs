@@ -21,5 +21,13 @@ namespace CSharp_OOP_Lab_08
         {
             return this.username == username;
         }
+        public void ShowInfo(string username)
+        {
+            Console.WriteLine($"Username: {Username}\nReward:{Rewared}"); 
+        }
+        public void AddReward(int profit)
+        {
+            Rewared += profit;
+        }
     }
 }
