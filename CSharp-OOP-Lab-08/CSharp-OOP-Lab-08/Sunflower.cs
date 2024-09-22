@@ -20,10 +20,10 @@ namespace CSharp_OOP_Lab_08
             Water = 50;
             Duration = TimeSpan.FromSeconds(30);
         }
-        public override void Seed()
+        public override string Seed()
         {
             Start = DateTime.Now;
-            Console.WriteLine($"Sunflower has peen planted at {Start.ToShortTimeString()}");
+            return $"Sunflower has peen planted at {Start.ToShortTimeString()}";
         }
         public override int Harvest()
         {

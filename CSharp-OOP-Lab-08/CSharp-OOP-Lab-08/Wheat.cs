@@ -20,10 +20,10 @@ namespace CSharp_OOP_Lab_08
             Water = 20;
             Duration = TimeSpan.FromSeconds(10);
         }
-        public override void Seed()
+        public override string Seed()
         {
             Start = DateTime.Now;
-            Console.WriteLine($"Wheat has peen planted at {Start.ToShortTimeString()}");
+            return $"Wheat has peen planted at {Start.ToShortTimeString()}";
         }
         public override int Harvest()
         {

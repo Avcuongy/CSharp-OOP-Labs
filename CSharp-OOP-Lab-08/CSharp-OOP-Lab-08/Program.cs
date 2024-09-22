@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace CSharp_OOP_Lab_08
         {
             Console.OutputEncoding = Encoding.UTF8;
 
+            List<string> selectedProductschoice = new List<string>();
             List<Product> Products = new List<Product>();
             List<Player> Users = new List<Player>()
             {
@@ -74,7 +76,9 @@ namespace CSharp_OOP_Lab_08
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("1. Seed");
                 Console.WriteLine("2. Exit\n");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("Enter your choice: ");
+                Console.ForegroundColor = ConsoleColor.White;
                 string choose = Console.ReadLine();
 
                 switch (choose)
@@ -85,7 +89,9 @@ namespace CSharp_OOP_Lab_08
                             Console.Clear();
                             Console.WriteLine("Choose Seed:\n");
                             Console.WriteLine("1. Wheat\n2. Tomato\n3. Sunflower\n4. Back\n");
+                            Console.ForegroundColor= ConsoleColor.Green;
                             Console.Write("Enter Your Choose: ");
+                            Console.ForegroundColor = ConsoleColor.White;
                             string seedChoice = Console.ReadLine();
 
                             Product selectedProduct = null;
@@ -99,20 +105,26 @@ namespace CSharp_OOP_Lab_08
                             }
 
                             if (selectedProduct != null)
-                            {
+                            {                        
+                                selectedProductschoice.Add(selectedProduct.Seed());
+
                                 Products.Add(selectedProduct);
 
                             Back:
-
                                 Console.Clear();
 
-                                selectedProduct.Seed();
+                                foreach (string choice in selectedProductschoice)
+                                {
+                                    Console.WriteLine(choice);
+                                }
 
                                 Console.WriteLine();
                                 Console.WriteLine("Choose method:\n");
                                 Console.ForegroundColor = ConsoleColor.White;
                                 Console.WriteLine("1. Feed\n2. ProvWater\n3. Harvest:\n4. Back\n");
+                                Console.ForegroundColor = ConsoleColor.Green;
                                 Console.Write("Enter your choose: ");
+                                Console.ForegroundColor = ConsoleColor.White;
                                 string pick = Console.ReadLine();
 
                                 Console.Clear();
