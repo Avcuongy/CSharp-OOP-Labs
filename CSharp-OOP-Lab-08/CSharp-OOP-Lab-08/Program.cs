@@ -220,6 +220,7 @@ namespace CSharp_OOP_Lab_08
                                                 }
                                             }
                                             Products.Clear();
+                                            selectedProductschoice.Clear();
                                             Console.ForegroundColor = ConsoleColor.Green;
                                             Console.WriteLine("\nPress Enter To Back");
                                             Console.ForegroundColor = ConsoleColor.White;
