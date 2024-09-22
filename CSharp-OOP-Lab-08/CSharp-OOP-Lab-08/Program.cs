@@ -86,6 +86,7 @@ namespace CSharp_OOP_Lab_08
                     case "1":
                         {
                         MainSeed:
+
                             Console.Clear();
                             Console.WriteLine("Choose Seed:\n");
                             Console.WriteLine("1. Wheat\n2. Tomato\n3. Sunflower\n4. Back\n");
@@ -111,6 +112,7 @@ namespace CSharp_OOP_Lab_08
                                 Products.Add(selectedProduct);
 
                             Back:
+
                                 Console.Clear();
 
                                 foreach (string choice in selectedProductschoice)
@@ -155,7 +157,9 @@ namespace CSharp_OOP_Lab_08
                                                     Console.WriteLine($"Error: {ex.Message}");
                                                 }
                                             }
+                                            Console.ForegroundColor= ConsoleColor.Green;
                                             Console.WriteLine("\nPress Enter To Back");
+                                            Console.ForegroundColor = ConsoleColor.White;
                                             Console.ReadLine();
                                             Console.Clear();
                                             goto Back;
@@ -184,7 +188,9 @@ namespace CSharp_OOP_Lab_08
                                                     Console.WriteLine($"Error: {ex.Message}");
                                                 }
                                             }
+                                            Console.ForegroundColor = ConsoleColor.Green;
                                             Console.WriteLine("\nPress Enter To Back");
+                                            Console.ForegroundColor = ConsoleColor.White;
                                             Console.ReadLine();
                                             Console.Clear();
                                             goto Back;
@@ -214,7 +220,9 @@ namespace CSharp_OOP_Lab_08
                                                 }
                                             }
                                             Products.Clear();
+                                            Console.ForegroundColor = ConsoleColor.Green;
                                             Console.WriteLine("\nPress Enter To Back");
+                                            Console.ForegroundColor = ConsoleColor.White;
                                             Console.ReadLine();
                                             Console.Clear();
                                             goto MainMenu;
