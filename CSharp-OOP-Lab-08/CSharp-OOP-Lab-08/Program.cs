@@ -81,6 +81,7 @@ namespace CSharp_OOP_Lab_08
                 {
                     case "1":
                         {
+                        MainSeed:
                             Console.Clear();
                             Console.WriteLine("Choose Seed:\n");
                             Console.WriteLine("1. Wheat\n2. Tomato\n3. Sunflower\n4. Back\n");
@@ -110,7 +111,7 @@ namespace CSharp_OOP_Lab_08
                                 Console.WriteLine();
                                 Console.WriteLine("Choose method:\n");
                                 Console.ForegroundColor = ConsoleColor.White;
-                                Console.WriteLine("1. Feed\n2. ProvWater\n3. Harvest:\n");
+                                Console.WriteLine("1. Feed\n2. ProvWater\n3. Harvest:\n4. Back\n");
                                 Console.Write("Enter your choose: ");
                                 string pick = Console.ReadLine();
 
@@ -200,11 +201,15 @@ namespace CSharp_OOP_Lab_08
                                                     Console.WriteLine($"Error: {ex.Message}");
                                                 }
                                             }
-                                            Products.RemoveAt(0);
+                                            Products.Clear();
                                             Console.WriteLine("\nPress Enter To Back");
                                             Console.ReadLine();
                                             Console.Clear();
                                             goto MainMenu;
+                                        }
+                                    case "4":
+                                        {
+                                            goto MainSeed;
                                         }
                                 }
                             }
