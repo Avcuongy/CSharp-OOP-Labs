@@ -18,7 +18,7 @@ namespace CSharp_OOP_Lab_08
             Value = 500;
             Fertilizer = 50;
             Water = 50;
-            Duration = TimeSpan.FromSeconds(30);
+            Duration = TimeSpan.FromSeconds(10);
         }
         public override string Seed()
         {
