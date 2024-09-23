@@ -14,12 +14,18 @@ namespace CSharp_OOP_Lab_08
 {
     internal class Program
     {
+        static void ClockCountDown()
+        {
+
+        }
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            List<string> selectedProductschoice = new List<string>();
+            List<string> selectedProductsChoice = new List<string>();
+
             List<Product> Products = new List<Product>();
+
             List<Player> Users = new List<Player>()
             {
                 new Player("A", 10),
@@ -121,7 +127,7 @@ namespace CSharp_OOP_Lab_08
                                     goto MainSeed;
                                 }
 
-                                selectedProductschoice.Add(selectedProduct.Seed());
+                                selectedProductsChoice.Add(selectedProduct.Seed());
 
                                 Products.Add(selectedProduct);
 
@@ -129,7 +135,7 @@ namespace CSharp_OOP_Lab_08
 
                                 Console.Clear();
 
-                                foreach (string choice in selectedProductschoice)
+                                foreach (string choice in selectedProductsChoice)
                                 {
                                     Console.WriteLine(choice);
                                 }
@@ -234,7 +240,7 @@ namespace CSharp_OOP_Lab_08
                                                 }
                                             }
                                             Products.Clear();
-                                            selectedProductschoice.Clear();
+                                            selectedProductsChoice.Clear();
                                             Console.ForegroundColor = ConsoleColor.Green;
                                             Console.WriteLine("\nPress Enter To Back");
                                             Console.ForegroundColor = ConsoleColor.White;
