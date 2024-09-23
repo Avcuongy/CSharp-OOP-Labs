@@ -22,7 +22,7 @@ namespace CSharp_OOP_Lab_08
             List<Product> Products = new List<Product>();
             List<Player> Users = new List<Player>()
             {
-                new Player("A", 2000),
+                new Player("A", 10),
                 new Player("B", 3000),
                 new Player("C", 4000),
             };
@@ -49,12 +49,11 @@ namespace CSharp_OOP_Lab_08
                         player = p;
                     }
                 }
-
                 if (!checkUser)
                 {
                     Console.Clear();
                     Console.WriteLine("Username wrong! Enter Your Username Again !");
-                    Thread.Sleep(800);
+                    Thread.Sleep(500);
                     goto Login;
                 }
                 else
@@ -90,7 +89,7 @@ namespace CSharp_OOP_Lab_08
                             Console.Clear();
                             Console.WriteLine("Choose Seed:\n");
                             Console.WriteLine("1. Wheat\n2. Tomato\n3. Sunflower\n4. Back\n");
-                            Console.ForegroundColor= ConsoleColor.Green;
+                            Console.ForegroundColor = ConsoleColor.Green;
                             Console.Write("Enter Your Choose: ");
                             Console.ForegroundColor = ConsoleColor.White;
                             string seedChoice = Console.ReadLine();
@@ -99,14 +98,29 @@ namespace CSharp_OOP_Lab_08
 
                             switch (seedChoice)
                             {
-                                case "1": selectedProduct = new Wheat(); break;
-                                case "2": selectedProduct = new Tomato(); break;
-                                case "3": selectedProduct = new Sunflower(); break;
-                                case "4": goto MainMenu;
+                                case "1":
+                                    selectedProduct = new Wheat();
+                                    break;
+                                case "2":
+                                    selectedProduct = new Tomato();
+                                    break;
+                                case "3":
+                                    selectedProduct = new Sunflower();
+                                    break;
+                                case "4":
+                                    goto MainMenu;
                             }
 
                             if (selectedProduct != null)
-                            {                        
+                            {
+                                if (player.Reward < selectedProduct.Cost)
+                                {
+                                    Console.Clear();
+                                    Console.WriteLine("Not enough reward to plant this seed.(Back After 0.5s)");
+                                    Thread.Sleep(800);
+                                    goto MainSeed;
+                                }
+
                                 selectedProductschoice.Add(selectedProduct.Seed());
 
                                 Products.Add(selectedProduct);
@@ -157,7 +171,7 @@ namespace CSharp_OOP_Lab_08
                                                     Console.WriteLine($"Error: {ex.Message}");
                                                 }
                                             }
-                                            Console.ForegroundColor= ConsoleColor.Green;
+                                            Console.ForegroundColor = ConsoleColor.Green;
                                             Console.WriteLine("\nPress Enter To Back");
                                             Console.ForegroundColor = ConsoleColor.White;
                                             Console.ReadLine();

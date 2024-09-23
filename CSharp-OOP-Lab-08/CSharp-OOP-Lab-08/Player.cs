@@ -9,25 +9,25 @@ namespace CSharp_OOP_Lab_08
     internal class Player
     {
         private string username;
-        private int rewared;
+        private int reward;
         public Player(string username, int rewared)
         {
             this.username = username;
-            this.rewared = rewared;
+            this.reward = rewared;
         }
         public string Username { get => username; set => username = value; }
-        public int Rewared { get => rewared; set => rewared = value; }
+        public int Reward { get => reward; set => reward = value; }
         public bool CheckUser(string username)
         {
             return this.username == username;
         }
         public void ShowInfo(string username)
         {
-            Console.WriteLine($"Username: {Username}\nReward:{Rewared}"); 
+            Console.WriteLine($"Username: {Username}\nReward:{Reward}"); 
         }
         public void AddReward(int profit)
         {
-            Rewared += profit;
+            Reward += profit;
         }
     }
 }
