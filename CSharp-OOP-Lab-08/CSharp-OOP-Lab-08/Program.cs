@@ -28,9 +28,9 @@ namespace CSharp_OOP_Lab_08
 
             List<Player> Users = new List<Player>()
             {
-                new Player("A", 10),
+                new Player("A", 20),
                 new Player("B", 3000),
-                new Player("C", 4000),
+                new Player("C", 4000)
             };
 
         Login:
@@ -90,6 +90,7 @@ namespace CSharp_OOP_Lab_08
                 {
                     case "1":
                         {
+
                         MainSeed:
 
                             Console.Clear();
@@ -177,6 +178,7 @@ namespace CSharp_OOP_Lab_08
                                                     Console.WriteLine($"Error: {ex.Message}");
                                                 }
                                             }
+
                                             Console.ForegroundColor = ConsoleColor.Green;
                                             Console.WriteLine("\nPress Enter To Back");
                                             Console.ForegroundColor = ConsoleColor.White;
@@ -263,17 +265,17 @@ namespace CSharp_OOP_Lab_08
                         }
                 }
             }
+            // Xử lý trường hợp không tìm thấy người dùng hoặc sản phẩm.
             catch (NullReferenceException ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
-                // Xử lý trường hợp không tìm thấy người dùng hoặc sản phẩm.
                 Thread.Sleep(500);
                 goto Login;
             }
+            // Xử lý trường hợp nhập vào là null.
             catch (ArgumentNullException ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
-                // Xử lý trường hợp nhập vào là null.
                 Thread.Sleep(500);
                 goto Login;
             }
