@@ -42,5 +42,13 @@ namespace CSharp_OOP_Lab_08
             numWater++;
             Console.WriteLine("Wheat has been water");
         }
+        public bool IsWater()
+        {
+            return numWater == 1;
+        }
+        public bool IsFertilized()
+        {
+            return numFetilizer == 1;
+        }       
     }
 }

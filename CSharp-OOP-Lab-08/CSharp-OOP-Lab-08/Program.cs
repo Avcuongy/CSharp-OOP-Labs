@@ -28,7 +28,7 @@ namespace CSharp_OOP_Lab_08
 
             List<Player> Users = new List<Player>()
             {
-                new Player("A", 20),
+                new Player("A", 2000),
                 new Player("B", 3000),
                 new Player("C", 4000)
             };
@@ -225,15 +225,42 @@ namespace CSharp_OOP_Lab_08
                                                 {
                                                     if (product is Wheat wheat)
                                                     {
-                                                        player.AddReward(wheat.Harvest());
+                                                        if (wheat.IsWater() && wheat.IsFertilized())
+                                                        {
+                                                            player.AddReward(wheat.Harvest());
+                                                        }
+                                                        else
+                                                        {
+                                                            Console.WriteLine("Not enough Water or Fertilized");
+                                                            Thread.Sleep(500);
+                                                            goto Back;
+                                                        }
                                                     }
                                                     else if (product is Tomato tomato)
                                                     {
-                                                        player.AddReward(tomato.Harvest());
+                                                        if (tomato.IsWater() && tomato.IsFertilized())
+                                                        {
+                                                            player.AddReward(tomato.Harvest());
+                                                        }
+                                                        else
+                                                        {
+                                                            Console.WriteLine("Not enough Water or Fertilized");
+                                                            Thread.Sleep(500);
+                                                            goto Back;
+                                                        }
                                                     }
                                                     else if (product is Sunflower sunflower)
                                                     {
-                                                        player.AddReward(sunflower.Harvest());
+                                                        if (sunflower.IsWater() && sunflower.IsFertilized())
+                                                        {
+                                                            player.AddReward(sunflower.Harvest());
+                                                        }
+                                                        else
+                                                        {
+                                                            Console.WriteLine("Not enough Water or Fertilized");
+                                                            Thread.Sleep(500);
+                                                            goto Back;
+                                                        }
                                                     }
                                                 }
                                                 catch (InvalidCastException ex)
@@ -242,7 +269,7 @@ namespace CSharp_OOP_Lab_08
                                                 }
                                             }
                                             Products.Clear();
-                                            selectedProductsChoice.Clear();
+                                            //selectedProductsChoice.Clear();
                                             Console.ForegroundColor = ConsoleColor.Green;
                                             Console.WriteLine("\nPress Enter To Back");
                                             Console.ForegroundColor = ConsoleColor.White;
