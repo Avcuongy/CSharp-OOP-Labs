@@ -8,12 +8,10 @@ using System.Runtime.Serialization;
 
 namespace CSharp_OOP_Lab_08
 {
-    [DataContract]
+    [Serializable]
     internal class Player
     {
-        [DataMember]
         private string username;
-        [DataMember]
         private int reward;
         public Player(string username, int rewared)
         {

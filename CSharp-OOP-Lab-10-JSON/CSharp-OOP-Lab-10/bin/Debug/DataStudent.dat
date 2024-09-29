@@ -1,0 +1,34 @@
+{
+  "Students": [
+    {
+      "Id": 1,
+      "Name": "Nam",
+      "Age": 20
+    },
+    {
+      "Id": 2,
+      "Name": "Binh",
+      "Age": 21
+    },
+    {
+      "Id": 3,
+      "Name": "Minh",
+      "Age": 22
+    },
+    {
+      "Id": 4,
+      "Name": "Lan",
+      "Age": 23
+    },
+    {
+      "Id": 5,
+      "Name": "Hoa",
+      "Age": 24
+    },
+    {
+      "Id": 6,
+      "Name": "Nigga",
+      "Age": 25
+    }
+  ]
+}

@@ -3,14 +3,14 @@ using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics.Eventing.Reader;
-using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.IO;
 using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+
 
 namespace CSharp_OOP_Lab_08
 {
@@ -20,11 +20,11 @@ namespace CSharp_OOP_Lab_08
         {
             using (FileStream fs = new FileStream(filePath, FileMode.Create))
             {
-                DataContractSerializer serializer = new DataContractSerializer(typeof(List<Player>));
+                BinaryFormatter formatter = new BinaryFormatter();
 
                 try
                 {
-                    serializer.WriteObject(fs, users);
+                    formatter.Serialize(fs, users);
                 }
                 catch (Exception ex)
                 {
@@ -42,8 +42,8 @@ namespace CSharp_OOP_Lab_08
                 {
                     try
                     {
-                        DataContractSerializer serializer = new DataContractSerializer(typeof(List<Player>));
-                        users = (List<Player>)serializer.ReadObject(fs);
+                        BinaryFormatter formatter = new BinaryFormatter();
+                        users = (List<Player>)formatter.Deserialize(fs);
                     }
                     catch (Exception ex)
                     {
@@ -54,8 +54,6 @@ namespace CSharp_OOP_Lab_08
             }
             return users ?? new List<Player>();
         }
-
-
         static void Main(string[] args)
         {
 
