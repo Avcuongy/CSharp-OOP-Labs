@@ -16,67 +16,49 @@ namespace CSharp_OOP_Lab_08
 {
     internal class Program
     {
-        public static void SerializeData(List<Player> users, string filePath)
+        static void SerializeData(List<Player> players, string filePath)
         {
-            using (FileStream fs = new FileStream(filePath, FileMode.Create))
+            IFormatter formatter = new BinaryFormatter();
+            using (Stream stream = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None))
             {
-                BinaryFormatter formatter = new BinaryFormatter();
-
-                try
-                {
-                    formatter.Serialize(fs, users);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Failed to serialize. Reason: " + ex.Message);
-                    throw;
-                }
+                formatter.Serialize(stream, players);
             }
         }
-        public static List<Player> DeserializeData(string filePath)
+        static List<Player> DeserializeData(string filePath)
         {
-            List<Player> users = null;
             if (File.Exists(filePath))
             {
-                using (FileStream fs = new FileStream(filePath, FileMode.Open))
+                IFormatter formatter = new BinaryFormatter();
+                using (Stream stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
                 {
-                    try
-                    {
-                        BinaryFormatter formatter = new BinaryFormatter();
-                        users = (List<Player>)formatter.Deserialize(fs);
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine("Failed to deserialize. Reason: " + ex.Message);
-                        throw;
-                    }
+                    return (List<Player>)formatter.Deserialize(stream);
                 }
             }
-            return users ?? new List<Player>();
+            return null;
         }
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
 
             string filePath = "playersData.dat";
+            List<Player> Users;
 
-            // Deserialize dữ liệu từ file nếu có
-            List<Player> Users = DeserializeData(filePath);
-
-            Console.OutputEncoding = Encoding.UTF8;
+            // Deserialize dữ liệu từ file
+            if (File.Exists(filePath))
+            {
+                Users = DeserializeData(filePath);
+            }
+            else
+            {
+                Users = new List<Player>();
+                Users.Add(new Player("A", 3000));
+                Users.Add(new Player("B", 4000));
+            }
 
             List<string> selectedProductsChoice = new List<string>();
 
             List<Product> Products = new List<Product>();
 
-            if (Users == null || Users.Count == 0)
-            {
-                Users = new List<Player>()
-                {
-                    new Player("A", 2000),
-                    new Player("B", 3000),
-                    new Player("C", 4000)
-                };
-            }
 
         Login:
             Console.Clear();
@@ -119,7 +101,7 @@ namespace CSharp_OOP_Lab_08
 
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.White;
-                player.ShowInfo(username);
+                Console.WriteLine(player.ShowInfo());
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Main Menu:\n");

@@ -8,7 +8,8 @@ using System.Runtime.Serialization;
 
 namespace CSharp_OOP_Lab_08
 {
-    abstract class Product
+    [Serializable]
+    abstract class Product : ISerializable
     {
         private int cost;
         private int value;
@@ -24,5 +25,24 @@ namespace CSharp_OOP_Lab_08
         public int Water { get => water; set => water = value; }
         abstract public string Seed();
         abstract public int Harvest();
+        public Product() { }
+        public Product(SerializationInfo info, StreamingContext context)
+        {
+            Cost = info.GetInt32("Cost");
+            Value = info.GetInt32("Value");
+            Start = info.GetDateTime("Start");
+            Duration = (TimeSpan)info.GetValue("Duration", typeof(TimeSpan));
+            Fertilizer = info.GetInt32("Fertilizer");
+            Water = info.GetInt32("Water");
+        }
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("Cost", Cost);
+            info.AddValue("Value", Value);
+            info.AddValue("Value", Start);
+            info.AddValue("Duration", Duration);
+            info.AddValue("Fertilizer", Fertilizer);
+            info.AddValue("Water", Water);
+        }
     }
 }

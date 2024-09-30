@@ -51,6 +51,7 @@ namespace CSharp_OOP_Lab_08
         public bool IsFertilized()
         {
             return numFetilizer == 1;
-        }       
+        }
+
     }
 }

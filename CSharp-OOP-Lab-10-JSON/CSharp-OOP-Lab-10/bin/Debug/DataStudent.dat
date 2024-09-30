@@ -2,7 +2,7 @@
   "Students": [
     {
       "Id": 1,
-      "Name": "Nam",
+      "Name": "Namabcd123456",
       "Age": 20
     },
     {
@@ -24,11 +24,6 @@
       "Id": 5,
       "Name": "Hoa",
       "Age": 24
-    },
-    {
-      "Id": 6,
-      "Name": "Nigga",
-      "Age": 25
     }
   ]
 }

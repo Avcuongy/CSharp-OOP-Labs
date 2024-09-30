@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\",
+  "WorkspaceRootPath": "D:\\_Dev\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{489DA795-9961-4E8C-9D0D-55E9A4DA7013}|CSharp-OOP-Lab-10\\CSharp-OOP-Lab-10.csproj|d:\\c#\\oop c#\\csharp-oop-lab-10-json\\csharp-oop-lab-10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{489DA795-9961-4E8C-9D0D-55E9A4DA7013}|CSharp-OOP-Lab-10\\CSharp-OOP-Lab-10.csproj|d:\\_dev\\c#\\oop c#\\csharp-oop-lab-10-json\\csharp-oop-lab-10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{489DA795-9961-4E8C-9D0D-55E9A4DA7013}|CSharp-OOP-Lab-10\\CSharp-OOP-Lab-10.csproj|solutionrelative:csharp-oop-lab-10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{489DA795-9961-4E8C-9D0D-55E9A4DA7013}|CSharp-OOP-Lab-10\\CSharp-OOP-Lab-10.csproj|D:\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\csharp-oop-lab-10\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{489DA795-9961-4E8C-9D0D-55E9A4DA7013}|CSharp-OOP-Lab-10\\CSharp-OOP-Lab-10.csproj|solutionrelative:csharp-oop-lab-10\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{489DA795-9961-4E8C-9D0D-55E9A4DA7013}|CSharp-OOP-Lab-10\\CSharp-OOP-Lab-10.csproj|D:\\_Dev\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\csharp-oop-lab-10\\studentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{489DA795-9961-4E8C-9D0D-55E9A4DA7013}|CSharp-OOP-Lab-10\\CSharp-OOP-Lab-10.csproj|solutionrelative:csharp-oop-lab-10\\studentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{489DA795-9961-4E8C-9D0D-55E9A4DA7013}|CSharp-OOP-Lab-10\\CSharp-OOP-Lab-10.csproj|D:\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\csharp-oop-lab-10\\studentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{489DA795-9961-4E8C-9D0D-55E9A4DA7013}|CSharp-OOP-Lab-10\\CSharp-OOP-Lab-10.csproj|solutionrelative:csharp-oop-lab-10\\studentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{489DA795-9961-4E8C-9D0D-55E9A4DA7013}|CSharp-OOP-Lab-10\\CSharp-OOP-Lab-10.csproj|D:\\_Dev\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\csharp-oop-lab-10\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{489DA795-9961-4E8C-9D0D-55E9A4DA7013}|CSharp-OOP-Lab-10\\CSharp-OOP-Lab-10.csproj|solutionrelative:csharp-oop-lab-10\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,37 +34,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Student.cs",
-              "DocumentMoniker": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\Student.cs",
+              "DocumentMoniker": "D:\\_Dev\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\Student.cs",
               "RelativeDocumentMoniker": "CSharp-OOP-Lab-10\\Student.cs",
-              "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\Student.cs",
+              "ToolTip": "D:\\_Dev\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\Student.cs",
               "RelativeToolTip": "CSharp-OOP-Lab-10\\Student.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwB0AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T07:24:11.105Z"
+              "WhenOpened": "2024-09-29T07:24:11.105Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "StudentList.cs",
-              "DocumentMoniker": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\StudentList.cs",
+              "DocumentMoniker": "D:\\_Dev\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\StudentList.cs",
               "RelativeDocumentMoniker": "CSharp-OOP-Lab-10\\StudentList.cs",
-              "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\StudentList.cs",
+              "ToolTip": "D:\\_Dev\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\StudentList.cs",
               "RelativeToolTip": "CSharp-OOP-Lab-10\\StudentList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T07:24:27.078Z"
+              "WhenOpened": "2024-09-29T07:24:27.078Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\Program.cs",
+              "DocumentMoniker": "D:\\_Dev\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\Program.cs",
               "RelativeDocumentMoniker": "CSharp-OOP-Lab-10\\Program.cs",
-              "ToolTip": "D:\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\Program.cs",
+              "ToolTip": "D:\\_Dev\\C#\\OOP C#\\CSharp-OOP-Lab-10-JSON\\CSharp-OOP-Lab-10\\Program.cs",
               "RelativeToolTip": "CSharp-OOP-Lab-10\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-29T07:22:04.886Z",
               "EditorCaption": ""

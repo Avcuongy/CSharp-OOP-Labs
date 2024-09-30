@@ -14,10 +14,23 @@ namespace CSharp_OOP_Lab_10
     {
         static void Main(string[] args)
         {
-            StudentList studentList = new StudentList();
-            studentList.Add(new Student() { Id = 1, Name = "Nam", Age = 20 });
-            studentList.Add(new Student() { Id = 2, Name = "Binh", Age = 21 });
-            studentList.Add(new Student() { Id = 3, Name = "Minh", Age = 22 });
+
+            string filePath = "DataStudent.dat";
+            StudentList studentList;
+
+            if (File.Exists(filePath))
+            {
+                string fileContent = File.ReadAllText(filePath);
+                studentList = JsonSerializer.Deserialize<StudentList>(fileContent);
+            }
+            else
+            {
+                studentList = new StudentList();
+                studentList.Add(new Student() { Id = 1, Name = "Nam", Age = 20 });
+                studentList.Add(new Student() { Id = 2, Name = "Binh", Age = 21 });
+                studentList.Add(new Student() { Id = 3, Name = "Minh", Age = 22 });
+            }
+
 
             string json = JsonSerializer.Serialize(studentList, new JsonSerializerOptions { WriteIndented = true });
 
@@ -34,10 +47,10 @@ namespace CSharp_OOP_Lab_10
                 Console.WriteLine(student);
             }
 
+            //deserializedStudentList.Add(new Student() { Id = 4, Name = "Lan", Age = 23 });
+            //deserializedStudentList.Add(new Student() { Id = 5, Name = "Hoa", Age = 24 });
+            //deserializedStudentList.Add(new Student() { Id = 6, Name = "Nigga", Age = 25 });
 
-            deserializedStudentList.Add(new Student() { Id = 4, Name = "Lan", Age = 23 });
-            deserializedStudentList.Add(new Student() { Id = 5, Name = "Hoa", Age = 24 });
-            deserializedStudentList.Add(new Student() { Id = 6, Name = "Nigga", Age = 25 });
 
             string updatedJson = JsonSerializer.Serialize(deserializedStudentList, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText("DataStudent.dat", updatedJson);
@@ -52,7 +65,6 @@ namespace CSharp_OOP_Lab_10
             {
                 Console.WriteLine(student);
             }
-
             Console.ReadKey();
         }
     }
